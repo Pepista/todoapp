@@ -33,7 +33,8 @@ export default async function Home() {
             <ul className="pl-4">
                 {
                     todos.map(
-                        (todo : TodoType)=> <div className="bg-green-200 flex flex-row items-center border border-slate-300 text-slate-300 rounded px-4 py-2 hover:bg-zinc-700 focus-within:bg-black-700 outline-none text-lg">{todo.id}{todo.title}</div>)
+                        (todo : TodoType)=>
+                            <div key={todo.id} className="bg-green-200 flex flex-row items-center border border-slate-300 text-slate-300 rounded px-4 py-2 hover:bg-zinc-700 focus-within:bg-black-700 outline-none text-lg">{todo.id}{todo.title}</div>)
 
 
                 }
